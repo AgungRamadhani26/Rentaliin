@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProfileKendaraan">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bacground_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/arrow_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/arrow"
+        app:layout_constraintEnd_toStartOf="@+id/profile_kendaraan"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="48dp"
+        android:src="@drawable/share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toEndOf="@+id/profile_kendaraan"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_kendaraan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/profile_kendaraan"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/circle_bg"
+        android:src="@drawable/mobil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_kendaraan" />
+
+    <TextView
+        android:id="@+id/title_namamobil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/title_namamobil"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <RelativeLayout
+        android:id="@+id/layout_namamobil"
+        android:layout_width="355dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_textview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/title_namamobil"
+        app:layout_constraintTop_toBottomOf="@+id/title_namamobil">
+
+        <TextView
+            android:id="@+id/nama_mobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="13dp"
+            android:text="@string/nama_mobil"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_tahun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_tahun"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/layout_namamobil"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/layout_namamobil"
+        app:layout_constraintTop_toBottomOf="@+id/layout_namamobil" />
+
+    <RelativeLayout
+        android:id="@+id/layout_tahun"
+        android:layout_width="355dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_textview"
+        app:layout_constraintEnd_toEndOf="@+id/layout_namamobil"
+        app:layout_constraintStart_toStartOf="@+id/title_tahun"
+        app:layout_constraintTop_toBottomOf="@+id/title_tahun">
+
+        <TextView
+            android:id="@+id/tahun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="13dp"
+            android:text="@string/tahun"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_pajak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_pajak"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/layout_tahun"
+        app:layout_constraintTop_toBottomOf="@+id/layout_tahun" />
+
+    <RelativeLayout
+        android:id="@+id/layout_pajak"
+        android:layout_width="355dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_textview"
+        app:layout_constraintEnd_toEndOf="@+id/layout_tahun"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/title_pajak"
+        app:layout_constraintTop_toBottomOf="@+id/title_pajak">
+
+        <TextView
+            android:id="@+id/pajak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="13dp"
+            android:text="@string/pajak"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_sistemtransmisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_sistemtransmisi"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/layout_pajak"
+        app:layout_constraintTop_toBottomOf="@+id/layout_pajak" />
+
+    <RelativeLayout
+        android:id="@+id/layout_sistemtransmisi"
+        android:layout_width="355dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_textview"
+        app:layout_constraintEnd_toEndOf="@+id/layout_pajak"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/title_sistemtransmisi"
+        app:layout_constraintTop_toBottomOf="@+id/title_sistemtransmisi">
+
+        <TextView
+            android:id="@+id/sistem_transmisi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="13dp"
+            android:text="@string/sistem_transmisi"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title_keterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/title_keterangan"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/layout_sistemtransmisi"
+        app:layout_constraintTop_toBottomOf="@+id/layout_sistemtransmisi" />
+
+    <RelativeLayout
+        android:id="@+id/layout_keterangan"
+        android:layout_width="355dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/bg_textview"
+        app:layout_constraintEnd_toEndOf="@+id/layout_sistemtransmisi"
+        app:layout_constraintStart_toStartOf="@+id/title_keterangan"
+        app:layout_constraintTop_toBottomOf="@+id/title_keterangan">
+
+        <TextView
+            android:id="@+id/keterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="7dp"
+            android:text="@string/keterangan"
+            android:textAlignment="center"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_pesan_sekarang"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:text="@string/pesan_sekarang"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_keterangan"
+        app:layout_constraintVertical_bias="0.353" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
