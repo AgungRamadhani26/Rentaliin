@@ -172,7 +172,7 @@
     </FrameLayout>
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_signup"
         android:layout_width="285dp"
         android:layout_height="wrap_content"
         android:text="@string/signup"

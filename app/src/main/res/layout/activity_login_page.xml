@@ -116,6 +116,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/remember"
+        android:textSize="10sp"
         app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/relativeLayout"

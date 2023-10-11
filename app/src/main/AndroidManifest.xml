@@ -13,13 +13,13 @@
         android:theme="@style/Theme.Rentaliin"
         tools:targetApi="31">
         <activity
-            android:name=".DetailPesanan"
+            android:name=".ProfileKendaraan"
             android:exported="false" />
         <activity
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".LandingPage"
+            android:name=".DetailPesanan"
             android:exported="false" />
         <activity
             android:name=".LoginPage"
@@ -28,7 +28,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileKendaraan"
+            android:name=".LandingPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
