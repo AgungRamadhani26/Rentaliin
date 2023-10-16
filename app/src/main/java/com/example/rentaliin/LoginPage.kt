@@ -31,7 +31,6 @@ class LoginPage : AppCompatActivity(), View.OnClickListener {
         //jika bundle berisi data / tidak kosong maka akan menampilkan data username dan password pada halaman login
         if (bundle != null){
             etUsernameEmail.setText(bundle.getString("email_address"))
-            etPassword.setText(bundle.getString("set_password"))
         }
 
     }
@@ -44,7 +43,7 @@ class LoginPage : AppCompatActivity(), View.OnClickListener {
             }
 
             R.id.btn_login -> {
-                val intent = Intent(this@LoginPage, ProfileKendaraan::class.java)
+                val intent = Intent(this@LoginPage, Dashboard::class.java)
                 startActivity(intent)
             }
         }

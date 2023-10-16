@@ -12,7 +12,7 @@
         android:id="@+id/login_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
+        android:layout_marginTop="80dp"
         android:text="@string/login_title"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:text="@string/Dont_have_account"
         android:textSize="13sp"
+        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/login_title"
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:text="@string/create_account"
         android:textSize="13sp"
+        android:layout_marginTop="30dp"
         android:textColor="@color/blue1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.058"
@@ -46,9 +48,10 @@
 
 
     <RelativeLayout
+        android:id="@+id/relativeLayout6"
         android:layout_width="285dp"
         android:layout_height="44dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/bacground_circle"
         android:paddingStart="25dp"
         app:layout_constraintEnd_toEndOf="@+id/create_accont"
@@ -81,13 +84,13 @@
         android:id="@+id/relativeLayout"
         android:layout_width="285dp"
         android:layout_height="44dp"
-        android:layout_marginTop="108dp"
         android:background="@drawable/bacground_circle"
         android:paddingStart="25dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="@+id/create_accont"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/dont_have_account_title"
-        app:layout_constraintTop_toBottomOf="@+id/dont_have_account_title">
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout6">
 
         <ImageView
             android:id="@+id/lock"
@@ -114,9 +117,9 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="@string/remember"
-        android:textSize="10sp"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/relativeLayout"
@@ -124,11 +127,13 @@
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="285dp"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:text="@string/login"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:background="@drawable/button_bg"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -138,7 +143,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="20dp"
         android:text="@string/forgot"
         android:textColor="@color/red"
         android:textSize="13sp"
