@@ -42,5 +42,16 @@
     <string name="search">Search</string>
     <string name="lihat_peta">Lihat di\npeta</string>
     <string name="recomendation">Recomendation :</string>
-
+    <string name="namarental">Nama Rental</string>
+    <string name="alamatrental">Alamat Rental</string>
+    <string name="profile_pengguna">Profile</string>
+    <string name="title_namapengguna">Nama Lengkap</string>
+    <string name="nama_pengguna">Shania G, S.Psi.,M.Psi</string>
+    <string name="title_alamatpengguna">Alamat</string>
+    <string name="alamat_pengguna">Rumah Sakit Cinta Ibu, Jl. Kapten Pattimura no 78 Kabupaten Tegal</string>
+    <string name="title_notelepon_pengguna">No Telepon</string>
+    <string name="notelepon_pengguna">082370708949</string>
+    <string name="title_nik_pengguna">NIK</string>
+    <string name="nik_pengguna">1371011709860005</string>
+    <string name="confirm_pengguna">Confirm</string>
 </resources>
