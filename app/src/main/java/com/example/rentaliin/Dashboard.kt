@@ -9,6 +9,11 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class Dashboard : AppCompatActivity(), View.OnClickListener {
+
+    companion object{
+        val INTENT_PARCELABLE = "OBJECT_INTENT"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
@@ -49,24 +54,27 @@ class Dashboard : AppCompatActivity(), View.OnClickListener {
                 namaRental = "Martin Soraya Rental",
                 alamatRental = "Jl. Medan Timur No. 9",
                 R.drawable.baseline_star_24
-            )
+            ),
         )
 
         val recyclerView = findViewById<RecyclerView>(R.id.rv_rentalkendaraan)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.setHasFixedSize(true)
-        recyclerView.adapter = RentalKendaraanAdapter(this, rentalKendaraanList){
 
+        recyclerView.adapter = RentalKendaraanAdapter(this, rentalKendaraanList){
+            val intent = Intent(this, ProfileRental::class.java)
+            intent.putExtra(INTENT_PARCELABLE, it)
+            startActivity(intent)
         }
 
         //Intent ke profil pengguna
-        val user: ImageView = findViewById(R.id.user)
+        val user: ImageView = findViewById(R.id.iv_profile)
         user.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when(v.id){
-            R.id.user -> {
+            R.id.iv_profile -> {
                 val intent = Intent(this@Dashboard, ProfilePengguna::class.java)
                 startActivity(intent)
             }

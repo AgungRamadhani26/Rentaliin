@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bachround_daftarkendaraan">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_img_kendaraan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/kendaraanlandcruiser"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_nama_kendaraan"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_kendaraan"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_lihat_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="100"
+                android:text="@string/lihat_info"
+                android:layout_marginStart="120dp"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

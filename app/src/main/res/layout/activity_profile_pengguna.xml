@@ -28,17 +28,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/share_profile"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="48dp"
-        android:src="@drawable/baseline_share_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
-        app:layout_constraintStart_toEndOf="@+id/tv_profile"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/tv_profile"
         android:layout_width="wrap_content"
@@ -87,14 +76,15 @@
         app:layout_constraintStart_toStartOf="@+id/title_namapengguna"
         app:layout_constraintTop_toBottomOf="@+id/title_namapengguna">
 
-        <TextView
+        <EditText
             android:id="@+id/nama_pengguna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="15dp"
-            android:layout_marginBottom="13dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@android:color/transparent"
             android:text="@string/nama_pengguna"
             android:textSize="12sp"/>
     </RelativeLayout>
@@ -122,14 +112,15 @@
         app:layout_constraintStart_toStartOf="@+id/title_alamatpengguna"
         app:layout_constraintTop_toBottomOf="@+id/title_alamatpengguna">
 
-        <TextView
+        <EditText
             android:id="@+id/alamat_pengguna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="15dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@android:color/transparent"
             android:text="@string/alamat_pengguna"
             android:textSize="12sp"/>
     </RelativeLayout>
@@ -157,14 +148,15 @@
         app:layout_constraintStart_toStartOf="@+id/title_notelepon_pengguna"
         app:layout_constraintTop_toBottomOf="@+id/title_notelepon_pengguna">
 
-        <TextView
+        <EditText
             android:id="@+id/notelepon_pengguna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="15dp"
-            android:layout_marginBottom="13dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@android:color/transparent"
             android:text="@string/notelepon_pengguna"
             android:textSize="12sp"/>
     </RelativeLayout>
@@ -193,14 +185,15 @@
         app:layout_constraintStart_toStartOf="@+id/title_nik_pengguna"
         app:layout_constraintTop_toBottomOf="@+id/title_nik_pengguna">
 
-        <TextView
+        <EditText
             android:id="@+id/nik_pengguna"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="15dp"
-            android:layout_marginBottom="13dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="@android:color/transparent"
             android:text="@string/nik_pengguna"
             android:textSize="12sp"/>
     </RelativeLayout>

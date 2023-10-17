@@ -19,15 +19,15 @@
     <string name="login">Login</string>
     <string name="signup">SignUp</string>
     <string name="profile_kendaraan">Profile Kendaraan</string>
-    <string name="title_namamobil">Nama Mobil</string>
+    <string name="title_namamobil">Nama Mobil : </string>
     <string name="nama_mobil">Toyota Kijang Inova Reborn Putih</string>
-    <string name="title_tahun">Tahun</string>
+    <string name="title_tahun">Tahun : </string>
     <string name="tahun">2016</string>
-    <string name="title_pajak">Pajak</string>
+    <string name="title_pajak">Pajak : </string>
     <string name="pajak">Aktif Hingga 29 Oktober 2024</string>
-    <string name="title_sistemtransmisi">Sistem Transmisi</string>
+    <string name="title_sistemtransmisi">Sistem Transmisi : </string>
     <string name="sistem_transmisi">Matic</string>
-    <string name="title_keterangan">Keterangan</string>
+    <string name="title_keterangan">Keterangan : </string>
     <string name="keterangan">Sebuah mobil SUV 7 Seater dengan kondisi yang baik dan memadai untuk perjalanan jauh.</string>
     <string name="pesan_sekarang">Pesan Sekarang</string>
     <string name="detail_pesanan">Detail Pesanan</string>
@@ -48,10 +48,12 @@
     <string name="title_namapengguna">Nama Lengkap</string>
     <string name="nama_pengguna">Shania G, S.Psi.,M.Psi</string>
     <string name="title_alamatpengguna">Alamat</string>
-    <string name="alamat_pengguna">Rumah Sakit Cinta Ibu, Jl. Kapten Pattimura no 78 Kabupaten Tegal</string>
+    <string name="alamat_pengguna">Rumah Sakit Cinta Ibu, Jl. Kapten Pattimura no 78, Tegal</string>
     <string name="title_notelepon_pengguna">No Telepon</string>
     <string name="notelepon_pengguna">082370708949</string>
     <string name="title_nik_pengguna">NIK</string>
     <string name="nik_pengguna">1371011709860005</string>
     <string name="confirm_pengguna">Confirm</string>
+    <string name="nama_kendaraan">Nama Kendaraan</string>
+    <string name="lihat_info">Lihat info selengkapnya</string>
 </resources>

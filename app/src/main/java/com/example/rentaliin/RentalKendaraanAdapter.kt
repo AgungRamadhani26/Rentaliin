@@ -21,6 +21,9 @@ class RentalKendaraanAdapter(private val context: Context, private val rental_ke
             namaRental.text = rental_kendaraan.namaRental
             alamatRental.text = rental_kendaraan.alamatRental
             bintangRental.setImageResource(rental_kendaraan.bintangRental)
+            itemView.setOnClickListener {
+                listener(rental_kendaraan)
+            }
         }
     }
 
