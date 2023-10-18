@@ -24,8 +24,7 @@ class KendaraanAdapter(private val context: Context, private val kendaraan: List
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): KendaraanViewHolder {
-        return KendaraanAdapter.KendaraanViewHolder(LayoutInflater.from(context).inflate(R.layout.item_kendaraan, parent, false)
-        )
+        return KendaraanViewHolder(LayoutInflater.from(context).inflate(R.layout.item_kendaraan, parent, false))
     }
 
     override fun getItemCount(): Int = kendaraan.size

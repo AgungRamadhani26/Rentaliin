@@ -10,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ProfileRental : AppCompatActivity() {
     companion object{
-        val INTENT_PARCELABLE = "OBJECT_INTENT"
+        const val INTENT_PARCELABLE = "OBJECT_INTENT"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,9 +23,11 @@ class ProfileRental : AppCompatActivity() {
         val namaRental = findViewById<TextView>(R.id.tv_namarental)
         val alamatRental = findViewById<TextView>(R.id.tv_alamatrental)
 
-        imgRental.setImageResource(rental_kendaraan?.imgRental!!)
-        namaRental.text = rental_kendaraan.namaRental
-        alamatRental.text = rental_kendaraan.alamatRental
+        if (rental_kendaraan != null) {
+            imgRental.setImageResource(rental_kendaraan.imgRental!!)
+            namaRental.text = rental_kendaraan.namaRental
+            alamatRental.text = rental_kendaraan.alamatRental
+        }
 
         //Untuk recyclerview
         val kendaraanList = listOf<Kendaraan>(
@@ -71,7 +73,7 @@ class ProfileRental : AppCompatActivity() {
             ),
             Kendaraan(
                 R.drawable.kendaraanmio,
-                namaKendaraan = "Yamaha Beat Coklat",
+                namaKendaraan = "Yamaha Mio Coklat",
                 tahun = 2021,
                 pajak =  "Aktif Hingga 26 Maret 2024",
                 sistemTransmisi = "Matic",
@@ -85,9 +87,8 @@ class ProfileRental : AppCompatActivity() {
 
         recyclerView.adapter = KendaraanAdapter(this, kendaraanList){
             val intent = Intent(this, ProfileKendaraan::class.java)
-            intent.putExtra(ProfileRental.INTENT_PARCELABLE, it)
+            intent.putExtra(INTENT_PARCELABLE, it)
             startActivity(intent)
         }
-
     }
 }

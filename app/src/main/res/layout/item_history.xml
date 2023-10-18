@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bacground_history">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_img_rental_kendaraan"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/baseline_account_circle_24"/>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_nama_rental_kendaraan"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_rental_kendaraan"
+                android:textSize="15sp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"/>
+
+            <TextView
+                android:id="@+id/tv_waktu_perentalan"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tanggal_perentalan"
+                android:textAlignment="center"
+                android:textSize="10sp"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"/>
+
+            <TextView
+                android:id="@+id/tv_nama_kendaraan_rental"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nama_kendaraan_rental"
+                android:textAlignment="center"
+                android:textSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

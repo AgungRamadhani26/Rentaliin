@@ -56,4 +56,20 @@
     <string name="confirm_pengguna">Confirm</string>
     <string name="nama_kendaraan">Nama Kendaraan</string>
     <string name="lihat_info">Lihat info selengkapnya</string>
+    <string name="nama_rental_kendaraan">Nama Rental Kendaraan</string>
+    <string name="nama_kendaraan_rental">Nama Kendaraan Rental</string>
+    <string name="tanggal_perentalan">Tanggal Perentalan</string>
+    <string name="history">History Rental</string>
+    <string name="payment">Payment</string>
+    <string name="payment_desc">You can pay using the method below!</string>
+    <string name="title_card_number">Card number</string>
+    <string name="card_number">1234 1234 1234 1234</string>
+    <string name="title_expiry">Expiry</string>
+    <string name="expiry">11 / 24</string>
+    <string name="title_cvc">CVC</string>
+    <string name="cvc">567</string>
+    <string name="title_country">Country</string>
+    <string name="country">United States</string>
+    <string name="title_postal_code">Postal Code</string>
+    <string name="postal_code">90210</string>
 </resources>
