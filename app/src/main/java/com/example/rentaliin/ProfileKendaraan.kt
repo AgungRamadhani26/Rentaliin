@@ -1,6 +1,7 @@
 package com.example.rentaliin
 
 import android.content.Intent
+import android.graphics.drawable.ColorDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -25,13 +26,16 @@ class ProfileKendaraan : AppCompatActivity(), View.OnClickListener {
         val pajak = findViewById<TextView>(R.id.pajak)
         val sistemTransmisi = findViewById<TextView>(R.id.sistem_transmisi)
         val keterangan = findViewById<TextView>(R.id.keterangan)
+
         //agar ketika kendaraan dihalaman profile rental di klik akan muncul data kendaraan yng sesuai pada profile kendaraan
-        imgKendaraan.setImageResource(kendaraan?.imgKendaraan!!)
-        namaKendaraan.text = kendaraan.namaKendaraan
-        tahun.text = kendaraan.tahun.toString()
-        pajak.text = kendaraan.pajak
-        sistemTransmisi.text = kendaraan.sistemTransmisi
-        keterangan.text = kendaraan.keterangan
+        if (kendaraan != null) {
+            imgKendaraan.setImageResource(kendaraan.imgKendaraan)
+            namaKendaraan.text = kendaraan.namaKendaraan
+            tahun.text = kendaraan.tahun.toString()
+            pajak.text = kendaraan.pajak
+            sistemTransmisi.text = kendaraan.sistemTransmisi
+            keterangan.text = kendaraan.keterangan
+        }
 
 
         //intent ke detail pesanan
