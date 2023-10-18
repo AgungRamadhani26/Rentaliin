@@ -27,7 +27,7 @@ class ProfileKendaraan : AppCompatActivity(), View.OnClickListener {
         val sistemTransmisi = findViewById<TextView>(R.id.sistem_transmisi)
         val keterangan = findViewById<TextView>(R.id.keterangan)
 
-        //agar ketika kendaraan dihalaman profile rental di klik akan muncul data kendaraan yng sesuai pada profile kendaraan
+        //agar ketika kendaraan dihalaman profile rental di klik maka akan muncul data kendaraan yang sesuai pada profile kendaraan
         if (kendaraan != null) {
             imgKendaraan.setImageResource(kendaraan.imgKendaraan)
             namaKendaraan.text = kendaraan.namaKendaraan
